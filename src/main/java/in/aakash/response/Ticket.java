@@ -7,7 +7,6 @@ import lombok.Data;
 @Data
 @XmlRootElement
 public class Ticket {
-
 	private Integer ticketId;
 	private String ticketStatus;
 	private String ticketPrice;

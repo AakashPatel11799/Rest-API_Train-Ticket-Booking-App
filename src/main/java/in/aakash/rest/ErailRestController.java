@@ -20,9 +20,10 @@ public class ErailRestController {
 
 	@PostMapping(
 
-			value = "/ticket", 
-			consumes = { "application/xml", "application/json" }, 
-			produces = { "application/xml", "application/json" }
+			value = "/ticket",
+			consumes = { "application/xml", "application/json" },
+			produces = { "application/xml",
+					"application/json" }
 
 	)
 	public Ticket bookTicket(@RequestBody Passenger passenger) {
@@ -46,7 +47,7 @@ public class ErailRestController {
 
 	@GetMapping(
 
-			value = "/ticket/{ticketId}", 
+			value = "/ticket/{ticketId}",
 			produces = { "application/xml", "application/json" })
 
 	public Ticket getTicket(@PathVariable Integer ticketId) {
